@@ -158,7 +158,7 @@ public class Main {
         double y7 = 7;
         double y8 = 8;
         double y9 = 9;
-        double result_double_1 = (x + x1 + x2 + x3 + x4 + x5 + x6 + x7 + x8 + x9) / 10;
+        double result_double_1 = (y + y1 + y2 + y3 + y4 + y5 + y6 + y7 + y8 + y9) / 10;
         System.out.println("double = " + result_double_1);
     }
 
