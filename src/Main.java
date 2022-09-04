@@ -29,6 +29,7 @@ public class Main {
         Task_8();
         Task_9();
         Task_10();
+        Task_11();
 
     }
 
@@ -160,6 +161,12 @@ public class Main {
         double y9 = 9;
         double result_double_1 = (y + y1 + y2 + y3 + y4 + y5 + y6 + y7 + y8 + y9) / 10;
         System.out.println("double = " + result_double_1);
+    }
+
+    public static void Task_11(){
+        Scanner scanner = new Scanner(System.in);
+        int y = scanner.nextInt();
+        System.out.println(Integer.valueOf("5",y));
     }
 
 }
