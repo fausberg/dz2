@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -17,6 +18,8 @@ public class Main {
         System.out.println("Введите трёхзначное число");
         int n = scanner.nextInt();
         double n_7 = 123.6;
+        System.out.println("Введите число для превода в двоичную систему");
+        int chislo = scanner.nextInt();
         Task_1_a(xx, yy);
         Task_1_b(xx, yy);
         Task_1_c(xx, yy);
@@ -29,7 +32,7 @@ public class Main {
         Task_8();
         Task_9();
         Task_10();
-        Task_11();
+        Task_11(chislo);
 
     }
 
@@ -161,12 +164,21 @@ public class Main {
         double y9 = 9;
         double result_double_1 = (y + y1 + y2 + y3 + y4 + y5 + y6 + y7 + y8 + y9) / 10;
         System.out.println("double = " + result_double_1);
+        System.out.println();
     }
 
-    public static void Task_11(){
-        Scanner scanner = new Scanner(System.in);
-        int y = scanner.nextInt();
-        System.out.println(Integer.valueOf("5",y));
+    public static void Task_11(int chislo) {
+        int pum = 0;
+        while (chislo > 0) {
+            pum = chislo % 2;
+            if (pum % 2 == 0) {
+                System.out.print(pum % 2);
+            } else {
+                System.out.print(pum % 2);
+            }
+            chislo /= 2;
+        }
+
     }
 
 }
