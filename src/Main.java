@@ -99,7 +99,7 @@ public class Main {
 
     public static void Task_6(int n) {
         int sum = 0;
-        int memory = 0;
+        int memory;
         for (int N = n; N > 0; ) {
             memory = N % 10;
             N /= 10;
