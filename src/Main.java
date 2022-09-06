@@ -16,7 +16,7 @@ public class Main {
         int w = 3;
         System.out.println("Введите трёхзначное число");
         int n = scanner.nextInt();
-        double n_7 = 123.6;
+        double n_7 = 123.4;
         System.out.println("Введите число для превода в двоичную систему");
         int chislo = scanner.nextInt();
         Task_1_a(xx, yy);
@@ -110,7 +110,7 @@ public class Main {
     }
 
     public static void Task_7(double n) {
-        double result = Math.ceil(n);
+        double result = Math.round(n);
         System.out.println("Округление до ближайшего числа = " + result);
         System.out.println();
     }
