@@ -167,15 +167,22 @@ public class Main {
     }
 
     public static void Task_11(int chislo) {
+        int[] arr = new int[4];
+        int c = 0;
         int pum = 0;
         while (chislo > 0) {
             pum = chislo % 2;
             if (pum % 2 == 0) {
-                System.out.print(pum % 2);
+                arr[c] = pum % 2;
+                c++;
             } else {
-                System.out.print(pum % 2);
+                arr[c] = pum % 2;
+                c++;
             }
             chislo /= 2;
+        }
+        for(; c >= 0; c--){
+            System.out.print(arr[c]);
         }
 
     }
